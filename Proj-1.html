@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Belt Fitness</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <style>
+        body {
+            margin: 0px;
+            padding: 0px;
+            background: url('img/img3.jpg');
+            height: 1200px;
+            color: white;
+            font-family: 'Kalam', cursive;
+        }
+
+        .left {
+            display: inline-block;
+            position: absolute;
+            left: 60px;
+            top: 20px;
+            line-height: 18px;
+            font-size: 20px;
+            font-style: italic;
+        }
+
+        .mid {
+            display: block;
+            width: 38%;
+            margin: 29px auto;
+            font-size: 30px;
+            font-weight: bold;
+        }
+
+        .right {
+            position: absolute;
+            right: 34px;
+            top: 43px;
+            display: inline-block;
+        }
+
+        .navbar {
+            display: inline-block;
+        }
+
+        .navbar li {
+            display: inline-block;
+            font-size: 16px;
+        }
+
+        .navbar li a {
+            color: white;
+            text-decoration: none;
+            padding: 34px 23px;
+        }
+
+        .navbar li a:hover,
+        .navbar li a.active {
+            color: #00f9c2;
+            text-decoration: underline;
+        }
+
+        .left img {
+            filter: invert(100%);
+            width: 130px;
+        }
+
+        .left div {
+            text-align: center;
+        }
+
+        .btn {
+            margin: 0px 33px;
+            color: white;
+            background-color: black;
+            padding: 4px 14px;
+            border: 2px solid grey;
+            border-radius: 10px;
+            font-size: 15px;
+            cursor: pointer;
+            font-family: 'Kalam', cursive;
+        }
+
+        .btn:hover {
+            background-color: rgb(83, 82, 82);
+        }
+
+        .container {
+            margin: 34px 34px;
+            padding: 34px;
+            width: 90vw;
+            border-radius: 2px;
+
+        }
+
+        .form-group input {
+            text-align: center;
+            display: block;
+            width: 490px;
+            padding: 6px;
+            border: 2px solid black;
+            margin: 3px auto;
+            font-family: 'Kalam', cursive;
+            font-weight: bold;
+            font-size: 15px;
+        }
+
+        .container h1 {
+            text-align: center;
+        }
+
+        .container button {
+            display: block;
+            width: 506px;
+            margin: auto;
+        }
+    </style>
+</head>
+
+<body>
+    <header class="header">
+        <!-- Left box for logo -->
+        <div class="left">
+            <img src="img/img2.jpg" alt="">
+            <div>Belt Fitness</div>
+        </div>
+
+        <!-- Mid box for nav bar -->
+        <div class="mid">
+            <ul class="navbar">
+                <li><a href="#" class="active">Home</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Fitness Calculator</a></li>
+                <li><a href="#">Contact us</a></li>
+            </ul>
+        </div>
+
+        <!-- Right box for button -->
+        <div class="right">
+            <button class="btn">Call us now</button>
+            <button class="btn">FAQs</button>
+        </div>
+    </header>
+    <div class="container">
+        <h1>Join the best gym in the country!</h1>
+        <form action="noaction.php">
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your Name">
+                <input type="number" name="" placeholder="Enter Your Age">
+                <input type="text" name="" placeholder="Enter your Email Id">
+                <input type="text" name="" placeholder="Enter your Phone Number">
+            </div>
+            <button class="btn">Submit</button>
+        </form>
+    </div>
+</body>
+
+</html>
